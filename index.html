@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>
-			Google Home Page.
-		</title>
+		<title> Google Home </title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 <body>
-	<nav>
-		<ul>
-			<li><a href="#">YouTube</a></li>
-			<li><a href="#">Images</a></li>
-			<li><a href="#">Gmail</a></li>
+	<div id="nav">
+		<ul> 
+			<li class="upper_nav"><a href="#">Gmail</a></li>
+			<li class="upper_nav"><a href="#">Images</a></li>
+			<li class="upper_nav"><a href="#"><img id="nav_image" src="http://www.englewoodschools.net/cms/lib8/CO01900647/Centricity/Domain/1009/GoogleAppsIcon.png" /></a></li>
+			<li class="upper_nav"><a href="#"><img id="nav_image" src="https://image.flaticon.com/icons/png/128/181/181539.png" /></a></li>
+			<li class="upper_nav"><a href="#"><img id="nav_image" src="http://simpleicon.com/wp-content/uploads/account-256x256.png" /></a></li>
 		</ul>
-	</nav>
-		<br><br>
-	<form style="text-align: center" action="#" method="POST" name="google_search">
-		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
-			<br>
-		<input style="height: 35px; width: 580px" type="text" name="search_string" />
-			<br><br>
-		<input type="submit" name="search" value="Google Search" />
-		<input type="submit" value="I'm Feeling Lucky" />
-	</form>
+	</div>
 
-	<footer>
-		<ul>
-			<li><a href="#">Advertising</a></li>
-			<li><a href="#">Business</a></li>
-			<li><a href="#">About</a></li>
-			<li style="float: right;"><a href="#">Use Google.com</a></li>
-			<li style="float: right;"><a href="#">Settings</a></li>
-			<li style="float: right;"><a href="#">Terms </a></li>
-			<li style="float: right;"><a href="#">Privacy</a></li>
+	<div id="search_form">
+		<form class="google_search">
+			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" />
+				<br><br>
+			<input class="search_string" type="text" name="search_input" />
+				<br><br>
+			<input id="search_btn" type="submit" value="Google Search" />
+			<input id="search_btn" type="submit" value="I'm feeling lucky" />
+		</form>
+	</div>
+
+	<div id="footer">
+		<ul class="left_footer">
+			<li id="left_links"><a href="#">Advertising</a></li>
+			<li id="left_links"><a href="#">Business</a></li>
+			<li id="left_links"><a href="#">About</a></li>
 		</ul>
-	</footer>
+		<ul class="right_footer">
+			<li id="right_links"><a href="#">Privacy</a></li>
+			<li id="right_links"><a href="#">Terms</a></li>
+			<li id="right_links"><a href="#">Setting</a></li>
+			<li id="right_links"><a href="#">Using Google.com</a></li>
+		</ul>
+	</div>
 </body>
 </html>
